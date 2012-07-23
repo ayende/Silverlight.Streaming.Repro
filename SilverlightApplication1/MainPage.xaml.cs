@@ -38,7 +38,7 @@ namespace SilverlightApplication1
 		private int posInBuffer;
 		private void ReadAsync(Stream responseStream)
 		{
-			Task.Factory.FromAsync<int>((callback, o) => responseStream.BeginRead(buffer, 0, buffer.Length, callback, o),
+			Task.Factory.FromAsync<int>((callback, o) => responseStream.BeginRead(buffer, posInBuffer, buffer.Length- posInBuffer, callback, o),
 			                       responseStream.EndRead, null)
 								   .ContinueWith(task =>
 								   {

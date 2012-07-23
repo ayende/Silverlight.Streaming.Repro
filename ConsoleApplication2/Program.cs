@@ -69,21 +69,19 @@ namespace ConsoleApplication2
 					writer.Flush();
 					*/
 
-					/*
-					 * doesn't work
-					writer.WriteLine("first");
-					writer.Flush();
-					Thread.Sleep(10);
-					writer.WriteLine("second");
-					writer.Flush();
-					 */
+					// sometimes works
+					//writer.WriteLine("first");
+					//writer.Flush();
+					//Thread.Sleep(10);
+					//writer.WriteLine("second");
+					//writer.Flush();
 
 					//works
-					writer.WriteLine("first");
-					writer.Flush();
-					Thread.Sleep(50);
-					writer.WriteLine("second");
-					writer.Flush();
+					//writer.WriteLine("first");
+					//writer.Flush();
+					//Thread.Sleep(50);
+					//writer.WriteLine("second");
+					//writer.Flush();
 					Console.WriteLine("written");
 					Console.ReadLine();
 				}
